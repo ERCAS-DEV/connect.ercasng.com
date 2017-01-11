@@ -87,9 +87,9 @@ class Reports extends CI_Controller {
 		
 		} else {
 			$data['biller_srch'] = $this->input->post('biller_srch');
-			$data['billertbl'] = $billertbl;
-			$data['dateto'] = $dateto;
-			$data['datefrm'] = $datefrm;
+			$data['billertbl'] =$this->input->post('billertbl'); //$billertbl
+			$data['dateto'] = $this->input->post('dateto');//$dateto
+			$data['datefrm'] =$this->input->post('datefrm') ;//$datefrm
 		}
 		$data['analysisarr'] = $analysisdata; 
 		$data['menu'] = 'reports';
